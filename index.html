@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My Docs</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=".">My Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href=".">Tankcaster's Ship Combat Guide</a>
+                            </li>
+                            <li >
+                                <a href="asdf/">Welcome to MkDocs</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="disabled">
+                                <a rel="next" >
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="asdf/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#tankcasters-ship-combat-guide">Tankcaster's Ship Combat Guide</a></li>
+            <li><a href="#beginning">Beginning</a></li>
+            <li><a href="#turn-structure">Turn Structure</a></li>
+            <li><a href="#manoeuvre">Manoeuvre</a></li>
+            <li><a href="#shooting">Shooting</a></li>
+            <li><a href="#extended-actions">Extended Actions</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="tankcasters-ship-combat-guide">Tankcaster's Ship Combat Guide</h1>
+<p>Rounds = ~30 mins</p>
+<h2 id="beginning">Beginning</h2>
+<p>initiative = roll 1d10 + Detection</p>
+<h2 id="turn-structure">Turn Structure</h2>
+<h2 id="manoeuvre">Manoeuvre</h2>
+<ul>
+<li>When a starship takes its Manoeuvre Action, it chooses to
+move directly forward a number of VUs equal to its Speed value
+or half its Speed value.</li>
+<li>Once the
+starship has moved forward by its Speed value or half its Speed
+value, it may turn up to 90 degrees to the left or right.</li>
+<li>However, a skilled pilot can use more
+advanced Manoeuvre Actions to modify this Manoeuvre. Each
+Manoeuvre modifies (but does not replace)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Test</th>
+<th>Benefit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adjust Bearing</td>
+<td>Challenging (+0) Pilot (SpaceCraft)+ Manoeuvrability</td>
+<td>Turn earlier than normal</td>
+</tr>
+<tr>
+<td>Adjust Speed</td>
+<td>Challenging (+0) Pilot (SpaceCraft) + Manoeuvrability</td>
+<td>Move faster or slower than normal</td>
+</tr>
+<tr>
+<td>Adjust Speed &amp; Bearing</td>
+<td>Hard (–20) Pilot (SpaceCraft) + Manoeuvrability</td>
+<td>Turn earlier than normal while moving faster or slower than normal</td>
+</tr>
+<tr>
+<td>Come to New Heading</td>
+<td>Difficult (–10) Pilot (SpaceCraft) + Manoeuvrability</td>
+<td>Make two turns in one Round</td>
+</tr>
+<tr>
+<td>Disengage</td>
+<td>Opposed Challenging (+0) Pilot(SpaceCraft) + Manoeuvrability</td>
+<td>Escape combat</td>
+</tr>
+<tr>
+<td>Evasive Manoeuvres</td>
+<td>Difficult (–10) Pilot (SpaceCraft) + Manoeuvrability</td>
+<td>Inflicts penalties on enemy fire</td>
+</tr>
+</tbody>
+</table>
+<h2 id="shooting">Shooting</h2>
+<ul>
+<li>After completing its Manoeuvre Action, a ship has the option
+of firing its weapons. Each Weapon Component may be fi ed
+once per Strategic Turn, and all Weapon Components must be
+fired at once, although they may be fired at different targets.
+A Weapon Component may only be fired at a target within
+its firing arc.</li>
+</ul>
+<h3 id="weapon-characteristics">Weapon Characteristics</h3>
+<ul>
+<li>Strength: This is the maximum number of hits a macrobattery or lance can land on an enemy ship.</li>
+<li>Damage: This is the Damage each hit deals</li>
+<li>Crit Rating: This is the number of successes the shot must have to score a critical hit on the target.</li>
+<li>Firing Arc: This determines which direction a starship weapon may be fired in.</li>
+<li>Range: This is the range of the weapon. Starship weapons may be fired at targets no farther away than twice the weapon’s range</li>
+</ul>
+<h3 id="firing-steps">Firing Steps</h3>
+<p>Batteries
+1. Decide whether or not to combine shots, the character directing the firing has the option of adding the totals together and applying the new, larger total to the target ship once, rather than applying each damage result separately (downside: you can only crit once)
+2. Person firing makes a ballistic skill test for each battery <em>considering all modifiers i.e. extended actions</em>
+    - range modifier (long range: -10, short range: +10)
+    - When firing a macrobattery, a successful roll scores one hit, plus an additional hit for each degree of success to a maximum of the macrobattery’s strength
+    - <strong>CRITS</strong> When firing a weapon, if the character rolls a number of successes equal to the weapon’s Crit Rating, the shot has caused a Critical Hit. If the shot does not do any damage to Hull Integrity, inflict 1 automatic point of damage. Then roll 1d5 on the Critical Hit chart and apply the result to the target. 
+3. Void Shields absorb damage according to their strength
+4. Armor absorbs damage equal to it's value (this can completely negate damage)
+5. The ship loses Hull Integrity according to remaining damage (losing a hull intergrity also loses 1 ship population and morale)</p>
+<h3 id="crippled-ships">Crippled Ships</h3>
+<p>When a ship reaches 0 Hull Integrity, it becomes Crippled. Apply a –10 penalty to its Manoeuvrability and Detection, and reduce its Speed to half. In addition, reduce the strength of all weapon Components by half (round up). A ship will remain Crippled (and continue to suffer these effects) until it has regained at least 1 Hull Integrity. When a Crippled ship takes damage past its Armour, it takes a Critical Hit. Compare the value of the damage that exceeded the Armour to the Critical Hit chart. The ship suffers this Critical Hit result. </p>
+<h3 id="crit-table">Crit Table</h3>
+<table>
+<thead>
+<tr>
+<th>Roll</th>
+<th>Results</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Holed: A lucky hit has wrenched open the ship’s hull, exposing it to space. The attacker selects one Component (only choosing ones he knows of ) that is not the bridge or plasma/warp drives. Emergency bulkheads slam into place to seal off the compartments, but this Component is depressurized.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Internal Damage: The force of the hit ruptures bulkheads and smashes machinery. The attacker selects one Component (only choosing ones he knows of ) that is not the bridge or plasma/warp drives. This Component is damaged</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Sensors damaged: The ship’s auspex arrays have been knocked out, leaving the vessel blind. Until the damage is repaired, all shooting tests suffer a –30 to hit, and all sensory tests to detect anything beyond the ship’s immediate engagement range automatically fail. Additionally, as the arrays are located outside the hull, any repairs must be attempted in the void.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Thrusters damaged: The ship’s manoeuvring thrusters are smashed, venting randomly and leaking fuel. Roll 1d10. On a 1-7, the ship can still manoeuvre, albeit slowly. Reduce the ship’s Manoeuvrability bonus by –20. On an 8–10, the thrusters are completely damaged. The ship cannot turn. This damage can be repaired.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Fire!: Alarms scream through the hull as hungry flames oar though passageways and compartments. The blaze must be contained before it devours the entire ship! The attacker selects one Component (only choosing ones he knows of ) that is not the bridge or plasma/warp drive—this Component is now on fi e. The fi e follows all the rules for shipboard fi es.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Engines Crippled: Something pierces the immense drive tubes in the ship’s stern, bleeding plasma into the void and leaving the vessel drifting in space. Roll 1d10. on a 1-7, the plasma drives are still usable, though heavily damaged. Reduce the ship’s Speed by half. On an 8–10, the drives are completely wrecked. Reduce the ship’s Speed to 1. This damage can be repaired.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Surly Techsprites: Something has jarred and shocked the ship’s machine spirits, awakening their anger. Massive electrical surges knock out systems across the ship. Roll 1d10 for every Component. On a 4 or higher, the Component now counts as unpowered. Each Component must be repaired individually before it can receive power again. Morale takes 1d5 damage from the spooky atmosphere.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Decapitation: A lucky hit strikes the ship’s bridge, sending shrapnel scything across the compartment and opening it to space! All crewmembers on the bridge must make a Dodge reaction or be hit by shrapnel doing 2d10 Explosive damage. If the damage result is 12 or higher, the bridge Component is also depressurized. If the damage result is 16 or higher, the Component is damaged.</td>
+</tr>
+<tr>
+<td>9-10</td>
+<td>Hull Breach: The hull of the ship is ripped asunder by tremendous force, opening compartments to the void and doing massive structural damage. The attacker selects 1d5 Components (only choosing ones he knows of, and not including the bridge). Roll a d10 for each; on a 1-7 the Component is damaged and depressurized. On an 8–10 the Component is destroyed, and all crew inside are killed. Instead of rolling for Crew Population and Morale damage separately, the ship reduces both of its current values by half</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Catastrophic Damage: A succession of powerful blows and explosions rip through the ship, causing horrendous damage. Roll 1d10. On a 1-7, the ship is hulked. On a 8-9, the ship’s plasma drive explodes. On a 10, the ship’s warp drive explodes instead (if the ship does not have a warp drive, it suffers a plasma drive explosion).</td>
+</tr>
+<tr>
+<td>Space Hulk</td>
+<td>Catastrophic damage leaves the ship a drifting, smouldering wreck. Uncontrolled fi es burn in some compartments, others are open to space, and the rest are choked with the dead and dying. Roll 1d10 for each Component. On a 1–2, it is miraculously untouched, but is unpowered. On a 3-7, it is depressurized and damaged. On a 9–10, it is completely destroyed, and all crew inside are killed. Reduce Crew Population to 1d10.</td>
+</tr>
+<tr>
+<td>Plasma Drive Explosion</td>
+<td>The starship’s plasma drive explodes in a single, cataclysmic explosion. All starships within 1d10 VUs of the stricken craft must make a Hard (–20) Pilot (Space Craft)+Manoeuvrability Test or be struck by the flaming d bris of the destroyed vessel. Treat this as 1d5 macrobattery hits doing 1d10+4 damage each, that void shields and armour will protect against normally.</td>
+</tr>
+<tr>
+<td>Warp Drive Explosion</td>
+<td>The starship’s warp drive overloads and explodes, rending a seething hole in space, a maelstrom into the realm of chaos. Any starship within 2d10 VUs of the stricken craft must make a Hard (–20) Pilot (Space Craft)+Manoeuvrability Test or be struck by the chaos-storm, taking the equivalent of one lance strike doing 1d10 damage that void shields will not protect against. Additionally, every starship within 1d5 VUs of the stricken vessel must make a second Challenging (+0) Pilot (Space Craft)+Manoeuvrability Test, or be sucked into the rift. What happens next is up to the GM, but should be suitably horrible. Mass possessions and manifesting daemons are the norm, while the crew frantically tries to activate the Geller Field. The survival of those onboard the ship should by no means be guaranteed.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="extended-actions">Extended Actions</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Test</th>
+<th>Benefit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active Augury</td>
+<td>Scrutiny + Detection</td>
+<td>Scans the area</td>
+</tr>
+<tr>
+<td>Aid the Machine Spirit</td>
+<td>Tech-Use</td>
+<td>Bonus to Detection or Manoeuvrability</td>
+</tr>
+<tr>
+<td>Disinformation</td>
+<td>Deceive or Blather</td>
+<td>Raises Morale</td>
+</tr>
+<tr>
+<td>Emergency Repairs</td>
+<td>Tech-Use</td>
+<td>Repair damaged, depressurised, or unpowered Components</td>
+</tr>
+<tr>
+<td>Flank Speed</td>
+<td>Tech-Use</td>
+<td>Gain additional movement</td>
+</tr>
+<tr>
+<td>Focused Augury</td>
+<td>Scrutiny + Detection</td>
+<td>Detailed scan of one target</td>
+</tr>
+<tr>
+<td>Hail the Enemy</td>
+<td>Interaction Skill</td>
+<td>Communicates with another ship</td>
+</tr>
+<tr>
+<td>Hit and Run</td>
+<td>Pilot (Space Craft), Command</td>
+<td>Board enemy ship, cause damage, and return</td>
+</tr>
+<tr>
+<td><a href="#hold-fast!">Hold Fast!</a></td>
+<td>Willpower</td>
+<td>Reduces Morale Damage</td>
+</tr>
+<tr>
+<td>Jam Communications</td>
+<td>Tech-Use</td>
+<td>Stops target from sending vox signals</td>
+</tr>
+<tr>
+<td>Lock on Target</td>
+<td>Scrutiny + Detection</td>
+<td>Bonus to Ballistic Skill Tests with one weapon component</td>
+</tr>
+<tr>
+<td>Prepare to Repel Boarders!</td>
+<td>Command</td>
+<td>Bonus to Command Test vs. enemy boarding actions</td>
+</tr>
+<tr>
+<td>Put Your Backs Into It!</td>
+<td>Intimidate or Charm Bonus to various actions</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#triage">Triage</a></td>
+<td>Medicae</td>
+<td>Reduces Crew Population Damage</td>
+</tr>
+</tbody>
+</table>
+<h3 id="active-augury">Active Augury</h3>
+<p>The character makes a Challenging (+0) Scrutiny+Detection
+Test to scan the area surrounding the ship. If the scan is
+successful, the GM should reveal basic (and important)
+information about celestial bodies, phenomena, and ships
+within 20 VUs of the vessel. If there is a vessel on Silent
+Running within scan range, it is immediately detected.
+For every degree of success, the character can extend the
+range of his scan by fi e VUs</p>
+<h3 id="aid-the-machine-spirit">Aid the Machine Spirit</h3>
+<p>The character must make a Challenging (+0)
+Tech-Use Test to commune with the craft’s
+machine spirit and aid it in its calculations.
+On a success, the character may add +5
+to the ship’s Manoeuvrability or Detection for the remainder
+of the turn. For every two additional degrees of success, the
+character may add an additional +5 to the same system.</p>
+<h3 id="disinformation">Disinformation</h3>
+<p>The character makes a Difficult (–10) Deceive or Blather
+Test. If he succeeds, he can increase the crew’s Morale by 1d5
+for every degree of success for the duration of the combat.</p>
+<h3 id="emergency-repairs">Emergency Repairs</h3>
+<p>The character makes a Difficult (–10) Tech-Use Test to
+direct and aid repair crews. If he succeeds, he repairs one
+unpowered, damaged, or depressurized Component. Repairs
+normally take 1d5 turns, however, this can be reduced by 
+one turn per degree of success, to a minimum of one turn.
+ Starships
+Emergency Repairs cannot fix dest oyed Components</p>
+<p>### Focused Augury
+The character makes a Challenging (+0) Scrutiny
++Detection Test to scan a particular ship within 20 VUs of
+his vessel. A successful scan reveals a number of
+Components aboard the enemy ship. 
+- Basic Success: All Essential Components except Auger
+Arrays and Void Shields
+ - One Degree of Success: All Weapon Components
+ - Two Degrees of Success: Auger Arrays, Void Shields,
+and any combat related Components
+- Three Degrees of Success: All Components aboard the
+target ship</p>
+<h3 id="hail-the-enemy">Hail the Enemy</h3>
+<p>This action is unique as it can be performed by characters
+who have participated in Manoeuvre Actions or Shooting
+Actions during the turn. The character contacts one enemy
+ship using his ship’s vox systems. He may use Interaction
+Skills to accomplish certain goals, such as the Intimidation
+Skill to convince an opponent to surrender. The exact details
+of how this works is left up to the GM (see page 293 for
+details on the use of Interaction Skills).</p>
+<h3 id="hit-and-run">Hit and Run</h3>
+<p>This allows a character to raid an enemy ship, sabotage it,
+then retreat. The character makes a Challenging (+0) Pilot
+(Space Craft) Test, attempting to reach one enemy ship
+within 5 VUs in a boarding craft, accompanied by a team
+of raiders. This test can be modified by the target vessel’s
+Turret Rating (see page 220). If he fails the test, he is forced
+to return to his ship. If he fails by four or more degrees, his
+craft is shot down. The character either survives stranded in a
+crippled craft or is killed at the GM’s discretion.
+If he succeeds, he must make an opposed Ordinary (+10)
+Command Test against the commander of troops aboard the
+enemy ship. If he succeeds, roll 1d5 on the Critical Hit chart
+twice and select one result to apply to the enemy ship, plus 1
+point of damage to Hull Integrity for every degree of success.
+If he fails, his force is forced to retreat back to his boarding
+craft, unsuccessful in causing mayhem.</p>
+<h3 id="hold-fast">Hold Fast!</h3>
+<p>The character must have Air of Authority (or a similar Talent
+at the GM’s discretion) and make a Challenging (+0)
+Willpower Test. If he succeeds, he inspires the crew and
+reduces any damage to Morale by 1, plus 1 for every degree
+of success to a minimum of 1. Hold Fast! may only cancel out
+Morale damage suffered during the previous turn.
+Jam Communications
+The Character makes a Difficult (–10) Tech-Use Test,
+targeting a ship within 10 VUs of his vessel. If he succeeds,
+that ship is unable to use vox-transmitters or other
+technologies to communicate with other ships. Psychic
+communicators—such as an Astropath—are unaffected. For
+every degree of success, the range of Jam Communications is
+extended by one VU.”</p>
+<h3 id="lock-on-target">Lock on Target</h3>
+<p>The character makes a Challenging (+0)
+Scrutiny+Detection Test to use the
+ship’s augers and calculate exact firing solutions on an enemy
+vessel. If successful, he adds a +5 bonus to the Ballistic Skill
+Test to fi e one Weapon Component during this turn. Every
+two additional degrees of success ad an additional +5 to the
+same Test.</p>
+<h3 id="prepare-to-repel-borders">Prepare to Repel Borders!</h3>
+<p>This character must make a Challenging (+0) Command
+Test in order to organise and arm a portion of the crew. If he
+succeeds, he may add +10 to any opposed Command Test
+he performs against enemy borders during subsequent turns
+of combat, plus an additional +5 for every degree of success.
+Although the character is not required to make additional
+tests on subsequent turns, he will be occupied rallying the
+defenders for as long as he wants to maintain the bonus.</p>
+<h3 id="put-your-backs-into-it">Put Your Backs Into It!</h3>
+<p>The character makes a Challenging (+0) Intimidate
+or Charm Test. If he succeeds, he can choose to add +5
+to a Ballistic Skill Test to fi e a Weapon Component, an
+Emergency Repairs Action, or an attempt to put out a fi e
+made during this turn. He may aid an additional Ballistic Skill
+Test, Emergency Repairs Action, or fi efighting attempt for
+every three degrees of success.</p>
+<h3 id="triage">Triage</h3>
+<p>The character makes a Difficult (–10) Medicae Test. If he
+succeeds, he reduces any damage to Crew Population by 1,
+plus 1 for every degree of success to a minimum of 1. Triage
+may only cancel Crew Population damage suffered during the
+previous Turn.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2021-03-05 04:19:57
+-->
